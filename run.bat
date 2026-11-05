@@ -12,15 +12,15 @@ if not exist ".venv\Scripts\python.exe" (
 )
 
 echo [1/2] Starting FastAPI Backend on http://127.0.0.1:8000 ...
-start "WealthPulse Backend" cmd /k "call .venv\Scripts\activate.bat && python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload"
+start "Affan Backend" cmd /k "call .venv\Scripts\activate.bat && python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload"
 
 echo [2/2] Starting Vite React Frontend on http://localhost:5173 ...
 cd frontend
-start "WealthPulse Frontend" cmd /k "npm.cmd run dev"
+start "Affan Frontend" cmd /k "npm.cmd run dev"
 
 echo.
 echo ========================================================
-echo WealthPulse is running!
+echo Affan Accounting OS is running!
 echo App URL:     http://localhost:5173
 echo Backend API: http://127.0.0.1:8000/docs
 echo ========================================================
